@@ -50,7 +50,7 @@ const pixel_canvase = {
     this.reader.addEventListener("load", (e) => {
       this.main();
     });
-  }, 
+  },
 
   init() {
     this.canvas = document.getElementById("pixel-maipulation");
@@ -141,5 +141,7 @@ window.addEventListener(
 window.addEventListener("load", function () {
   getFileObject("card.png", function (fileObject) {
     pixel_canvase.getBase64(fileObject);
+
+    alert("Refresh the page once due to loading issue");
   });
 });
