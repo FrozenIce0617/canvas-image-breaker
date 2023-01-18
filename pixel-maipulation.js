@@ -142,6 +142,8 @@ window.addEventListener("load", function () {
   getFileObject("card.png", function (fileObject) {
     pixel_canvase.getBase64(fileObject);
 
-    alert("This is just simple application which is working with image. Please enjoy!");
+    alert(
+      "This is just simple application which is working with image.\n  You can also upload image what you want to play with. \nI hope you enjoy!"
+    );
   });
 });
